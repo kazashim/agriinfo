@@ -76,19 +76,19 @@ if(isset($_SESSION['username'])){
                                             <div class="card-body pt-0">
                                                 <form method="post" action="createuser.php">
                                                     <div class="form-label-group">
-                                                        <input type="text" id="inputName" class="form-control" placeholder="Name" required>
+                                                        <input type="text" name="username" id="inputName" class="form-control" placeholder="Name" required>
                                                         <label for="inputName">Name</label>
                                                     </div>
                                                     <div class="form-label-group">
-                                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                                                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required>
                                                         <label for="inputEmail">Email</label>
                                                     </div>
                                                     <div class="form-label-group">
-                                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                                        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                                                         <label for="inputPassword">Password</label>
                                                     </div>
                                                     <div class="form-label-group">
-                                                        <input type="password" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required>
+                                                        <input type="password" name="password" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required>
                                                         <label for="inputConfPassword">Confirm Password</label>
                                                     </div>
                                                     <div class="form-group row">
