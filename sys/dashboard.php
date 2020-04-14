@@ -1,3 +1,8 @@
+
+<?php require_once('../cynconnet/database.php');
+      require_once('../cynconnet/session.php');
+      require_once('result.php');
+?>
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->

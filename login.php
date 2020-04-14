@@ -23,7 +23,7 @@ if(isset($db,$_POST['submit'])){
 			
 			if($_SESSION["type"]=='user'){
                
-				header("Location:sys/dashboard.php");
+				header("Location: sys/dashboard.php");
 			}
 		}
 		
