@@ -102,9 +102,9 @@ if(isset($db,$_POST['submit'])){
                                         <p class="px-2">Welcome back, please login to your account.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form action="index.html">
+                                                <form method="post" action="login.php">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                                        <input type="text" class="form-control" id="user-name" placeholder="Username" required>
+                                                        <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-user"></i>
                                                         </div>
@@ -112,7 +112,7 @@ if(isset($db,$_POST['submit'])){
                                                     </fieldset>
 
                                                     <fieldset class="form-label-group position-relative has-icon-left">
-                                                        <input type="password" class="form-control" id="user-password" placeholder="Password" required>
+                                                        <input type="password" class="form-control"  name="password" id="user-password" placeholder="Password" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-lock"></i>
                                                         </div>
