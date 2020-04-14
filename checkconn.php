@@ -32,7 +32,7 @@
 		// Register $myusername, $mypassword and print "true"
 		echo "true";
 		$_SESSION['username'] = $row['username'];
-		$_SESSION['password'] = 'mypassword';
+		$_SESSION['password'] = 'password';
 		
 	}
 	else {
