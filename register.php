@@ -1,3 +1,10 @@
+<?php
+  session_start();
+if(isset($_SESSION['username'])){
+    header("location:index.php");
+  }
+  
+?>
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -67,7 +74,7 @@
                                         <p class="px-2">Fill the below form to create a new account.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-0">
-                                                <form action="index.html">
+                                                <form method="post" action="createuser.php">
                                                     <div class="form-label-group">
                                                         <input type="text" id="inputName" class="form-control" placeholder="Name" required>
                                                         <label for="inputName">Name</label>

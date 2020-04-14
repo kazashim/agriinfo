@@ -1,36 +1,9 @@
-<?php require_once('cynconnet/database.php');
+<?php
+  session_start();
 
-if(isset($db,$_POST['submit'])){
-    $username = mysqli_real_escape_string($db,$_POST['username']);
-    $password = mysqli_real_escape_string($db,$_POST['password']);
-    $password= md5($password);
-    $query1=mysqli_query($db,"SELECT username,password,type,name,surname FROM users");
-	while($row=mysqli_fetch_array($query1))
-	{
-        $db_name=$row["name"];
-		$db_surname=$row["surname"];
-		$db_username=$row["username"];
-		$db_password=$row["password"];
-		$db_type=$row["type"];
-       
-		
-		if($username==$db_username && $password==$db_password){
-			session_start();
-			$_SESSION["username"]=$db_username;
-			$_SESSION["type"]=$db_type;
-            $_SESSION["name"]=$db_name;
-            $_SESSION["surname"]=$db_surname;
-			
-			if($_SESSION["type"]=='user'){
-               
-				header("Location: sys/dashboard.php");
-			}
-		}
-		
-	
-    }
-}
-
+  if(isset($_SESSION['username'])){
+    header("location:sys/dashboard.php");
+  }
 ?>
 
 <!DOCTYPE html>
@@ -102,7 +75,7 @@ if(isset($db,$_POST['submit'])){
                                         <p class="px-2">Welcome back, please login to your account.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form method="post" action="login.php">
+                                                <form method="post" action="checkconn.php">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
                                                         <input type="text" class="form-control" name="username" id="user-name" placeholder="Username" required>
                                                         <div class="form-control-position">
