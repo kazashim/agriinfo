@@ -1,4 +1,4 @@
-<?php require_once('zvinodiwa/database.php');
+<?php require_once('cynconnet/database.php');
 
 if(isset($db,$_POST['submit'])){
     $username = mysqli_real_escape_string($db,$_POST['username']);
@@ -45,30 +45,30 @@ if(isset($db,$_POST['submit'])){
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
     <title>Login Page - AgriInfo</title>
-    <link rel="apple-touch-icon" href="ventor/app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="ventor/app-assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="vendor/app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="vendor/app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/vendors/css/vendors.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/colors.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/themes/semi-dark-layout.css">
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="ventor/app-assets/css/pages/authentication.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="vendor/app-assets/css/pages/authentication.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="ventor/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/assets/css/style.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -90,7 +90,7 @@ if(isset($db,$_POST['submit'])){
                         <div class="card bg-authentication rounded-0 mb-0">
                             <div class="row m-0">
                                 <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-1 py-0">
-                                    <img src="ventor/app-assets/images/pages/login.png" alt="branding logo">
+                                    <img src="vendor/app-assets/images/pages/login.png" alt="branding logo">
                                 </div>
                                 <div class="col-lg-6 col-12 p-0">
                                     <div class="card rounded-0 mb-0 px-2">
@@ -104,7 +104,7 @@ if(isset($db,$_POST['submit'])){
                                             <div class="card-body pt-1">
                                                 <form method="post" action="login.php">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                                        <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+                                                        <input type="text" class="form-control" name="username" id="user-name" placeholder="Username" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-user"></i>
                                                         </div>
@@ -164,16 +164,16 @@ if(isset($db,$_POST['submit'])){
 
 
     <!-- BEGIN: Vendor JS-->
-    <script src="ventor/app-assets/vendors/js/vendors.min.js"></script>
+    <script src="vendor/app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
-    <script src="ventor/app-assets/js/core/app-menu.js"></script>
-    <script src="ventor/app-assets/js/core/app.js"></script>
-    <script src="ventor/app-assets/js/scripts/components.js"></script>
+    <script src="vendor/app-assets/js/core/app-menu.js"></script>
+    <script src="vendor/app-assets/js/core/app.js"></script>
+    <script src="vendor/app-assets/js/scripts/components.js"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
