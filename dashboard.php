@@ -421,11 +421,26 @@ if($_SESSION['username'] != "Admin"){
        <div class="card-body">
          <div class="row align-items-center">
            <div class="col-12 col-lg-3 text-center">
-             <p class="mt-4">Total Orders</p>
-             <h4 class="mb-0">4,350</h4>
+             <p class="mt-4">Total Houses</p>
+             <h4 class="mb-0"><?php
+                      $sql = "SELECT * FROM house";
+                      $query = mysqli_query($con,$sql);
+                      $num = mysqli_num_rows($query);
+                      echo $num;
+                       ?></h4>
              <hr>
              <p>Total Payments</p>
-             <h4 class="mb-0 text-info">$80,520</h4>
+             <h4 class="mb-0 text-info"> <?php $sql = "SELECT SUM(amount) FROM payment";
+                          $query = mysqli_query($con,$sql);
+                          $res = mysqli_fetch_assoc($query);
+
+                          do {
+                            $total = $res['SUM(amount)'];
+                            $res = mysqli_fetch_assoc($query);
+                          } while ($res);
+
+                          echo "ZMW. ".number_format($total);
+                           ?></h4>
            </div>
            <div class="col-12 col-lg-9">
 		     <div class="chart-container-11">
@@ -436,193 +451,9 @@ if($_SESSION['username'] != "Admin"){
        </div>
      </div><!--End Card-->
 	 
-	 <div class="row">
-	   <div class="col-lg-6">
-	     <div class="card">
-		     <div class="card-header">Popular Listings
-				 <div class="card-action">
-				 <div class="dropdown">
-				 <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-				  <i class="icon-options"></i>
-				 </a>
-				  <div class="dropdown-menu dropdown-menu-right">
-				  <a class="dropdown-item" href="javascript:void();">Action</a>
-				  <a class="dropdown-item" href="javascript:void();">Another action</a>
-				  <a class="dropdown-item" href="javascript:void();">Something else here</a>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="javascript:void();">Separated link</a>
-				   </div>
-				  </div>
-				 </div>
-			   </div>
-			   
-			    <ul class="list-group list-group-flush shadow-none">
-				  <li class="list-group-item">
-				    <div class="media align-items-center">
-                    <img src="https://via.placeholder.com/110x110" alt="user avatar" class="customer-img rounded">
-					<div class="media-body ml-3">
-					  <h6 class="mb-0">Lorem ipsum dolor sitamet consectetur adipiscing</h6>
-					  <small class="small-font">$810,000 . 04 Beds . 03 Baths</small>
-					</div>
-				   </div>
-				  </li>
-				  <li class="list-group-item">
-				    <div class="media align-items-center">
-                    <img src="https://via.placeholder.com/110x110" alt="user avatar" class="customer-img rounded">
-					<div class="media-body ml-3">
-					  <h6 class="mb-0">Lorem ipsum dolor sitamet consectetur adipiscing</h6>
-					  <small class="small-font">$2,560,000 . 08 Beds . 07 Baths</small>
-					</div>
-				   </div>
-				  </li>
-				  <li class="list-group-item">
-				    <div class="media align-items-center">
-                    <img src="https://via.placeholder.com/110x110" alt="user avatar" class="customer-img rounded">
-					<div class="media-body ml-3">
-					  <h6 class="mb-0">Lorem ipsum dolor sitamet consectetur adipiscing</h6>
-					  <small class="small-font">$910,300 . 03 Beds . 02 Baths</small>
-					</div>
-				   </div>
-				  </li>
-				  <li class="list-group-item">
-				    <div class="media align-items-center">
-                     <img src="https://via.placeholder.com/110x110" alt="user avatar" class="customer-img rounded">
-					<div class="media-body ml-3">
-					  <h6 class="mb-0">Lorem ipsum dolor sitamet consectetur adipiscing</h6>
-					  <small class="small-font">$1,140,650 . 06 Beds . 03 Baths</small>
-					</div>
-				   </div>
-				  </li>
-				  <li class="list-group-item">
-				    <div class="media align-items-center">
-                    <img src="https://via.placeholder.com/110x110" alt="user avatar" class="customer-img rounded">
-					<div class="media-body ml-3">
-					  <h6 class="mb-0">Lorem ipsum dolor sitamet consectetur adipiscing</h6>
-					  <small class="small-font">$1,140,650 . 06 Beds . 03 Baths</small>
-					</div>
-				   </div>
-				  </li>
-				  <li class="list-group-item">
-				    <div class="media align-items-center">
-                    <img src="https://via.placeholder.com/110x110" alt="user avatar" class="customer-img rounded">
-					<div class="media-body ml-3">
-					  <h6 class="mb-0">Lorem ipsum dolor sitamet consectetur adipiscing</h6>
-					  <small class="small-font">$910,300 . 03 Beds . 02 Baths</small>
-					</div>
-				   </div>
-				  </li>
-				</ul>
-			<div class="card-footer text-center bg-transparent border-0">
-			  <a href="javascript:void();">View all listings</a>
-			</div>
-           
-         </div>
-	   </div>
+	 
 	   
-	   <div class="col-lg-6">
-	     <div class="card">
-		     <div class="card-header">Popular Categories
-				 <div class="card-action">
-				 <div class="dropdown">
-				 <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-				  <i class="icon-options"></i>
-				 </a>
-				  <div class="dropdown-menu dropdown-menu-right">
-				  <a class="dropdown-item" href="javascript:void();">Action</a>
-				  <a class="dropdown-item" href="javascript:void();">Another action</a>
-				  <a class="dropdown-item" href="javascript:void();">Something else here</a>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="javascript:void();">Separated link</a>
-				   </div>
-				  </div>
-				 </div>
-			   </div>
-               
-			 <ul class="list-group list-group-flush shadow-none">
-              <li class="list-group-item">
-                <div class="media align-items-center">
-                  <div class="icon-box border border-light">
-					<i class="fa fa-cutlery"></i>
-				  </div>
-                <div class="media-body ml-3">
-                  <h6 class="mb-0">Restaurants</h6>
-                </div>
-                 <div class="date">
-                 Submited List: 250
-                 </div>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="media align-items-center">
-                  <div class="icon-box border border-light">
-					<i class="fa fa-bed"></i>
-				  </div>
-                <div class="media-body ml-3">
-                  <h6 class="mb-0">Hotels</h6>
-                </div>
-                 <div class="date">
-                 Submited List: 90
-                 </div>
-                </div>
-              </li>
-			  <li class="list-group-item">
-                <div class="media align-items-center">
-                  <div class="icon-box border border-light">
-					<i class="fa fa-glass"></i>
-				  </div>
-                <div class="media-body ml-3">
-                  <h6 class="mb-0">Nightclubs</h6>
-                </div>
-                 <div class="date">
-                 Submited List: 260
-                 </div>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="media align-items-center">
-                  <div class="icon-box border border-light">
-					<i class="fa fa-video-camera"></i>
-				  </div>
-                <div class="media-body ml-3">
-                  <h6 class="mb-0">Movie Theaters</h6>
-                </div>
-                 <div class="date">
-                 Submited List: 150
-                 </div>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="media align-items-center">
-                  <div class="icon-box border border-light">
-					<i class="fa fa-shopping-bag"></i>
-				  </div>
-                <div class="media-body ml-3">
-                  <h6 class="mb-0">Shopping</h6>
-                </div>
-                 <div class="date">
-                 Submited List: 300
-                 </div>
-                </div>
-              </li>
-			  <li class="list-group-item">
-                <div class="media align-items-center">
-                  <div class="icon-box border border-light">
-					<i class="fa fa-lightbulb-o"></i>
-				  </div>
-                <div class="media-body ml-3">
-                  <h6 class="mb-0">Museums</h6>
-                </div>
-                 <div class="date">
-                 Submited List: 150
-                 </div>
-                </div>
-              </li>
-            </ul>
-			
-			<div class="card-footer text-center border-0">
-			  <a href="javascript:void();">View all Categories</a>
-			</div>
-           
+	  
          </div>
 	   </div>
 	 </div><!--End Row-->
