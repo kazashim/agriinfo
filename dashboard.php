@@ -134,20 +134,10 @@ if($_SESSION['username'] != "Admin"){
       </li>
       
       <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Forms</span>
+        <a href="form_out.php" class="waves-effect">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Tenant-Out form</span>
           <i class="fa fa-angle-left pull-right"></i>
         </a>
-        <ul class="sidebar-submenu">
-          <li><a href="form-inputs.html"><i class="zmdi zmdi-dot-circle-alt"></i> Basic Inputs</a></li>
-          <li><a href="form-input-group.html"><i class="zmdi zmdi-dot-circle-alt"></i> Input Groups</a></li>
-          <li><a href="form-layouts.html"><i class="zmdi zmdi-dot-circle-alt"></i> Form Layouts</a></li>
-          <li><a href="form-advanced.html"><i class="zmdi zmdi-dot-circle-alt"></i> Form Advanced</a></li>
-          <li><a href="form-uploads.html"><i class="zmdi zmdi-dot-circle-alt"></i> Form Uploads</a></li>
-          <li><a href="form-validation.html"><i class="zmdi zmdi-dot-circle-alt"></i> Form Validation</a></li>
-          <li><a href="form-step-wizard.html"><i class="zmdi zmdi-dot-circle-alt"></i> Form Wizard</a></li>
-          <li><a href="form-text-editor.html"><i class="zmdi zmdi-dot-circle-alt"></i> Form Editor</a></li>
-        </ul>
       </li>
 
       <li>
