@@ -141,37 +141,20 @@ if($_SESSION['username'] != "Admin"){
       </li>
 
       <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-lock"></i> <span>Authentication</span>
-          <i class="fa fa-angle-left float-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-          <li><a href="authentication-signin.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> SignIn 1</a></li>
-          <li><a href="authentication-signup.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> SignUp 1</a></li>
-          <li><a href="authentication-signin2.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> SignIn 2</a></li>
-          <li><a href="authentication-signup2.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> SignUp 2</a></li>
-          <li><a href="authentication-lock-screen.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> Lock Screen</a></li>
-          <li><a href="authentication-reset-password.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> Reset Password 1</a></li>
-          <li><a href="authentication-reset-password2.html" target="_blank"><i class="zmdi zmdi-dot-circle-alt"></i> Reset Password 2</a></li>
-        </ul>
-       </li>
-       <li>
-        <a href="calendar.html" class="waves-effect">
-          <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
-          <small class="badge float-right badge-light">New</small>
+        <a href="form_out.php" class="waves-effect">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Messaging</span>
+          <i class="fa fa-angle-left pull-right"></i>
         </a>
       </li>
+      
        <li>
         <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
+          <i class="zmdi zmdi-invert-colors"></i> <span>User</span>
           <i class="fa fa-angle-left float-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="icons-font-awesome.html"><i class="zmdi zmdi-dot-circle-alt"></i> Font Awesome</a></li>
-          <li><a href="icons-material-designs.html"><i class="zmdi zmdi-dot-circle-alt"></i> Material Design</a></li>
-          <li><a href="icons-themify.html"><i class="zmdi zmdi-dot-circle-alt"></i> Themify Icons</a></li>
-          <li><a href="icons-simple-line-icons.html"><i class="zmdi zmdi-dot-circle-alt"></i> Line Icons</a></li>
-          <li><a href="icons-flags.html"><i class="zmdi zmdi-dot-circle-alt"></i> Flag Icons</a></li>
+          <li><a href="icons-font-awesome.html"><i class="zmdi zmdi-dot-circle-alt"></i> Register</a></li>
+          <li><a href="icons-material-designs.html"><i class="zmdi zmdi-dot-circle-alt"></i> Change Password</a></li>
         </ul>
       </li>
      
