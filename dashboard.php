@@ -51,14 +51,16 @@ if($_SESSION['username'] != "Admin"){
      <div class="brand-logo">
       <a href="index.html">
        <img src="vendor/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Dashtreme Admin</h5>
+       <h5 class="logo-text">Rentals</h5>
      </a>
    </div>
    <div class="user-details">
     <div class="media align-items-center user-pointer collapsed" data-toggle="collapse" data-target="#user-dropdown">
       <div class="avatar"><img class="mr-3 side-user-img" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
        <div class="media-body">
-       <h6 class="side-user-name">Mark Johnson</h6>
+       <h6 class="side-user-name">
+       <?php $uname = $_SESSION['username'];
+         echo "<b><b>".$uname."</b></b>"; ?>
       </div>
        </div>
      <div id="user-dropdown" class="collapse">
@@ -372,7 +374,8 @@ if($_SESSION['username'] != "Admin"){
            <div class="media">
              <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
             <div class="media-body">
-            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
+            <h6 class="mt-2 user-title"> <?php $uname = $_SESSION['username'];
+         echo "<b><b>".$uname."</b></b>"; ?></h6>
             <p class="user-subtitle">mccoy@example.com</p>
             </div>
            </div>
