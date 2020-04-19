@@ -58,7 +58,7 @@ if(isset($_POST["login"])){
       $_SESSION['username'] = $uname;
       echo "<script type='text/javascript'>alert('Welcome $uname!');</script>";
       echo '<style>body{display:none;}</style>';
-      echo '<script>window.location.href = "sys/dashboard.php";</script>';
+      echo '<script>window.location.href = "createuser.php";</script>';
 
     }
     elseif ($role == "Manager") {
@@ -169,7 +169,7 @@ if(isset($_POST["login"])){
 						  <div class="form-group">
 						   <div class="position-relative has-icon-left">
 							   <label for="exampleInputUsername" class="sr-only">Username</label>
-								 <input type="text" id="exampleInputUsername" class="form-control" name="username" aria-describedby="emailHelp" value="<?php echo @$uname; ?>" placeholder="Username">
+								 <input type="text" id="exampleInputUsername" class="form-control" name="username" value="<?php echo @$uname; ?>" placeholder="Username">
 								 <div class="form-control-position">
 									<i class="icon-user"></i>
 								</div>
@@ -195,7 +195,7 @@ if(isset($_POST["login"])){
 							 <a href="authentication-reset-password2.html">Reset Password</a>
 							</div>
 						</div>
-						<button type="button" class="btn btn-primary btn-block waves-effect waves-light">Sign In</button>
+						<button type="submit" type="button" class="btn btn-primary btn-block waves-effect waves-light">Sign In</button>
 						 <div class="text-center pt-3">
 						<p>or Sign in with</p>
 
@@ -236,6 +236,8 @@ if(isset($_POST["login"])){
   
   <!-- Custom scripts -->
   <script src="vendor/js/app-script.js"></script>
+
+  <script src="vendor/js/sb-admin-2.min.js"></script>
   
 </body>
 </html>
