@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "cynconnet/config.php";
+include_once ('cynconnet/config.php');
 
 
 function check($data){
@@ -185,7 +185,7 @@ if(isset($_POST["login"])){
                                         <p class="px-2">Welcome back, please login to your account.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form method="post" action="checkconn.php">
+                                                <form method= "POST"action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
                                                         <input type="text" class="form-control" name="username" id="user-name" placeholder="Username" required>
                                                         <div class="form-control-position">
