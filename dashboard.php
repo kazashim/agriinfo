@@ -80,80 +80,56 @@ if($_SESSION['username'] != "Admin"){
 		 
 		</ul>
       </li>
-      <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-layers"></i>
-          <span>UI Elements</span> <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-    <li><a href="ui-typography.html"><i class="zmdi zmdi-dot-circle-alt"></i> Typography</a></li>
-        <li><a href="ui-cards.html"><i class="zmdi zmdi-dot-circle-alt"></i> Cards</a></li>
-    <li><a href="ui-buttons.html"><i class="zmdi zmdi-dot-circle-alt"></i> Buttons</a></li>
-        <li><a href="ui-nav-tabs.html"><i class="zmdi zmdi-dot-circle-alt"></i> Nav Tabs</a></li>
-        <li><a href="ui-accordions.html"><i class="zmdi zmdi-dot-circle-alt"></i> Accordions</a></li>
-        <li><a href="ui-modals.html"><i class="zmdi zmdi-dot-circle-alt"></i> Modals</a></li>
-        <li><a href="ui-list-groups.html"><i class="zmdi zmdi-dot-circle-alt"></i> List Groups</a></li>
-        <li><a href="ui-bootstrap-elements.html"><i class="zmdi zmdi-dot-circle-alt"></i> BS Elements</a></li>
-        <li><a href="ui-pagination.html"><i class="zmdi zmdi-dot-circle-alt"></i> Pagination</a></li>
-        <li><a href="ui-alerts.html"><i class="zmdi zmdi-dot-circle-alt"></i> Alerts</a></li>
-        <li><a href="ui-progressbars.html"><i class="zmdi zmdi-dot-circle-alt"></i> Progress Bars</a></li>
-    <li><a href="ui-checkbox-radio.html"><i class="zmdi zmdi-dot-circle-alt"></i> Checkboxes & Radios</a></li>
-        <li><a href="ui-notification.html"><i class="zmdi zmdi-dot-circle-alt"></i> Notifications</a></li>
-        <li><a href="ui-sweet-alert.html"><i class="zmdi zmdi-dot-circle-alt"></i> Sweet Alerts</a></li>
-        </ul>
-      </li>
+      
       <li>
         <a href="javaScript:void();" class="waves-effect">
           <i class="zmdi zmdi-card-travel"></i>
-          <span>Components</span>
+          <span>House</span>
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="components-range-slider.html"><i class="zmdi zmdi-dot-circle-alt"></i> Range Sliders</a></li>
-          <li><a href="components-image-carousel.html"><i class="zmdi zmdi-dot-circle-alt"></i> Image Carousels</a></li>
-          <li><a href="components-grid-layouts.html"><i class="zmdi zmdi-dot-circle-alt"></i> Grid Layouts</a></li>
-          <li><a href="components-switcher-buttons.html"><i class="zmdi zmdi-dot-circle-alt"></i> Switcher Buttons</a></li>
-          <li><a href="components-pricing-table.html"><i class="zmdi zmdi-dot-circle-alt"></i> Pricing Tables</a></li>
-          <li><a href="components-vertical-timeline.html"><i class="zmdi zmdi-dot-circle-alt"></i> Vertical Timeline</a></li>
-          <li><a href="components-horizontal-timeline.html"><i class="zmdi zmdi-dot-circle-alt"></i> Horizontal Timeline</a></li>
-          <li><a href="components-fancy-lightbox.html"><i class="zmdi zmdi-dot-circle-alt"></i> Fancy Lightbox</a></li>
-          <li><a href="components-color-palette.html"><i class="zmdi zmdi-dot-circle-alt"></i> Color Palette</a></li>
+          <li><a href="components-range-slider.html"><i class="zmdi zmdi-dot-circle-alt"></i>House Information</a></li>
+          <li><a href="components-image-carousel.html"><i class="zmdi zmdi-dot-circle-alt"></i> Add House</a></li>
+          <li><a href="components-image-carousel.html"><i class="zmdi zmdi-dot-circle-alt"></i> Change the Cost of the<br/>House</a></li>
+          <li><a href="components-image-carousel.html"><i class="zmdi zmdi-dot-circle-alt"></i> Edit House Information</a></li>
+        
         </ul>
       </li>
       <li>
         <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-chart"></i> <span>Charts</span>
+          <i class="zmdi zmdi-chart"></i> <span>Contract</span>
           <i class="fa fa-angle-left float-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="charts-chartjs.html"><i class="zmdi zmdi-dot-circle-alt"></i> Chart JS</a></li>
-          <li><a href="charts-apex.html"><i class="zmdi zmdi-dot-circle-alt"></i> Apex Charts</a></li>
-          <li><a href="charts-sparkline.html"><i class="zmdi zmdi-dot-circle-alt"></i> Sparkline Charts</a></li>
-          <li><a href="charts-peity.html"><i class="zmdi zmdi-dot-circle-alt"></i> Peity Charts</a></li>
-          <li><a href="charts-other.html"><i class="zmdi zmdi-dot-circle-alt"></i> Other Charts</a></li>
+          <li><a href="charts-chartjs.html"><i class="zmdi zmdi-dot-circle-alt"></i> Contract Information</a></li>
+          <li><a href="charts-apex.html"><i class="zmdi zmdi-dot-circle-alt"></i> Edit Contract Information</a></li>
+          <li><a href="charts-sparkline.html"><i class="zmdi zmdi-dot-circle-alt"></i> Edit Contract Information<br/>(Part)</a></li>
         </ul>
        </li>
 	   <li>
         <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-widgets"></i> <span>Widgets</span>
+          <i class="zmdi zmdi-widgets"></i> <span>Tenants</span>
           <i class="fa fa-angle-left float-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="widgets-static.html"><i class="zmdi zmdi-dot-circle-alt"></i> Static Widgets</a></li>
-          <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Data Widgets</a></li>
+          <li><a href="widgets-static.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant Information</a></li>
+          <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenants' Contact</a></li>
+          <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant-In Details</a></li>
+          <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant-Out Details</a></li>
+          <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Edit Tenant Information</a></li>
+        
         </ul>
        </li>
     
       <li>
         <a href="javaScript:void();" class="waves-effect">
           <i class="zmdi zmdi-email"></i>
-          <span>Mailbox</span>
+          <span>Payment</span>
            <small class="badge float-right badge-warning">12</small>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="mail-inbox.html"><i class="zmdi zmdi-dot-circle-alt"></i> Inbox</a></li>
-          <li><a href="mail-compose.html"><i class="zmdi zmdi-dot-circle-alt"></i> Compose</a></li>
-          <li><a href="mail-read.html"><i class="zmdi zmdi-dot-circle-alt"></i> Read Mail</a></li>
+          <li><a href="mail-inbox.html"><i class="zmdi zmdi-dot-circle-alt"></i> >Payment Information</a></li>
+          <li><a href="mail-compose.html"><i class="zmdi zmdi-dot-circle-alt"></i>Edit Payment</a></li>
         </ul>
       </li>
       
