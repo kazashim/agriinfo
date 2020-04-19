@@ -1,10 +1,13 @@
-
-<?php require_once('../cynconnet/database.php');
-      require_once('../cynconnet/session.php');
-      require_once('result.php');
-?>
+<?php
+session_start();
+include "conn.php";
+if($_SESSION['username'] != "Admin"){
+  echo '<script>window.location.href = "./login.php";</script>';
+  exit();
+}
+ ?>
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr">
+
 <!-- BEGIN: Head-->
 
 <head>
