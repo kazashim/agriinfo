@@ -58,7 +58,7 @@ if(isset($_POST["login"])){
       $_SESSION['username'] = $uname;
       echo "<script type='text/javascript'>alert('Welcome $uname!');</script>";
       echo '<style>body{display:none;}</style>';
-      echo '<script>window.location.href = "admin_home.php";</script>';
+      echo '<script>window.location.href = "sys/dashboard.php";</script>';
 
     }
     elseif ($role == "Manager") {
