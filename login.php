@@ -195,7 +195,7 @@ if(isset($_POST["login"])){
 							 <a href="authentication-reset-password2.html">Reset Password</a>
 							</div>
 						</div>
-						<button type="submit" type="button" class="btn btn-primary btn-block waves-effect waves-light">Sign In</button>
+						<button type="submit"  class="btn btn-primary btn-block waves-effect waves-light">Sign In</button>
 						 <div class="text-center pt-3">
 						<p>or Sign in with</p>
 
