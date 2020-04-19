@@ -187,7 +187,7 @@ if(isset($_POST["login"])){
                                             <div class="card-body pt-1">
                                                 <form method= "POST"action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                                        <input type="text" class="form-control" name="username" id="user-name" placeholder="Username" required>
+                                                        <input type="text" class="form-control" name="username" id="user-name" value="<?php echo @$uname; ?>" placeholder="Username" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-user"></i>
                                                         </div>
