@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once ('cynconnet/config.php');
+include "cynconnet/config.php";
 
 
 function check($data){
@@ -58,7 +58,7 @@ if(isset($_POST["login"])){
       $_SESSION['username'] = $uname;
       echo "<script type='text/javascript'>alert('Welcome $uname!');</script>";
       echo '<style>body{display:none;}</style>';
-      echo '<script>window.location.href = "createuser.php";</script>';
+      echo '<script>window.location.href = "dashboard.php";</script>';
 
     }
     elseif ($role == "Manager") {
@@ -195,7 +195,7 @@ if(isset($_POST["login"])){
 							 <a href="authentication-reset-password2.html">Reset Password</a>
 							</div>
 						</div>
-						<button type="submit"  class="btn btn-primary btn-block waves-effect waves-light">Sign In</button>
+						<button type="submit"  class="btn btn-primary btn-block waves-effect waves-light" name="login" value="Login">Sign In</button>
 						 <div class="text-center pt-3">
 						<p>or Sign in with</p>
 
