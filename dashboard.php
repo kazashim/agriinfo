@@ -405,16 +405,21 @@ if($_SESSION['username'] != "Admin"){
     <div class="col-12 col-lg-6 col-xl-4">
       <div class="card">
       <div class="card-body">
-          <p class="mb-0 ">Listings <span class="float-right badge badge-primary">Monthly</span></p>
+          <p class="mb-0 ">Total Number of Tenants <span class="float-right badge badge-primary">Monthly</span></p>
            <div class="">
-           <h4 class="mb-0 py-3 text-primary">92,403 <span class="float-right"><i class="fa fa-home"></i></span></h4>
+           <h4 class="mb-0 py-3 text-primary"><?php
+                      $sql = "SELECT * FROM tenant";
+                      $query = mysqli_query($con,$sql);
+                      $num = mysqli_num_rows($query);
+                      echo $num;
+                       ?> <span class="float-right"><i class="fa fa-home"></i></span></h4>
            </div>
            <div class="progress-wrapper">
             <div class="progress" style="height:5px;">
             <div class="progress-bar bg-primary" style="width:60%"></div>
              </div>
           </div>
-          <p class="mb-0 mt-2 small-font">Compare to last month <span class="float-right">+15% <i class="fa fa-long-arrow-up"></i></span></p>
+          <p class="mb-0 mt-2 small-font">Total Number of Houses <span class="float-right">+15% <i class="fa fa-long-arrow-up"></i></span></p>
         </div>
       </div>
      </div>
@@ -423,9 +428,14 @@ if($_SESSION['username'] != "Admin"){
      <div class="col-12 col-lg-6 col-xl-4">
       <div class="card">
       <div class="card-body">
-          <p class="text-success mb-0">Search <span class="float-right badge badge-success">Today</span></p>
+          <p class="text-success mb-0">Total Number of Houses <span class="float-right badge badge-success">Today</span></p>
            <div class="">
-           <h4 class="mb-0 py-3 text-success">5,70,803 <span class="float-right"><i class="fa fa-search"></i></span></h4>
+           <h4 class="mb-0 py-3 text-success"><?php
+                      $sql = "SELECT * FROM house";
+                      $query = mysqli_query($con,$sql);
+                      $num = mysqli_num_rows($query);
+                      echo $num;
+                       ?> <span class="float-right"><i class="fa fa-search"></i></span></h4>
            </div>
            <div class="progress-wrapper">
             <div class="progress" style="height:5px;">
@@ -442,7 +452,18 @@ if($_SESSION['username'] != "Admin"){
       <div class="card-body">
           <p class="text-danger mb-0">Earnings <span class="float-right badge badge-danger">Weekly</span></p>
            <div class="">
-           <h4 class="mb-0 py-3 text-danger">$8,456 <span class="float-right"><i class="fa fa-usd"></i></span></h4>
+           <h4 class="mb-0 py-3 text-danger"><?php
+                          $sql = "SELECT SUM(amount) FROM payment";
+                          $query = mysqli_query($con,$sql);
+                          $res = mysqli_fetch_assoc($query);
+
+                          do {
+                            $total = $res['SUM(amount)'];
+                            $res = mysqli_fetch_assoc($query);
+                          } while ($res);
+
+                          echo "ZMW. ".number_format($total)."/=";
+                           ?> <span class="float-right"><i class="fa fa-usd"></i></span></h4>
            </div>
            <div class="progress-wrapper">
             <div class="progress" style="height:5px;">
