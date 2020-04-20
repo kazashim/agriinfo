@@ -116,7 +116,7 @@ if($_SESSION['username'] != "Admin"){
         <ul class="sidebar-submenu">
           <li><a href="widgets-static.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant Information</a></li>
           <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenants' Contact</a></li>
-          <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant-In Details</a></li>
+          <li><a href="tenant.php"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant-In Details</a></li>
           <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Tenant-Out Details</a></li>
           <li><a href="widgets-data.html"><i class="zmdi zmdi-dot-circle-alt"></i> Edit Tenant Information</a></li>
         
