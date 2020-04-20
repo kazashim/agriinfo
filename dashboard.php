@@ -395,7 +395,7 @@ if($_SESSION['username'] != "Admin"){
                             $res = mysqli_fetch_assoc($query);
                           } while ($res);
 
-                          echo "ZMW. ".number_format($total)."/=";
+                          echo "ZMW. ".number_format($total);
                            ?> <span class="float-right"><i class="fa fa-usd"></i></span></h4>
            </div>
            <div class="progress-wrapper">
