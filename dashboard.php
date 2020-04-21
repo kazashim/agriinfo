@@ -7,7 +7,8 @@ if($_SESSION['username'] != "Admin"){
 }
  ?>
 
-<?php include "cynconnet/config.php";?>
+<?php include "header.php";?>
+<?php include "sidebar.php";?>
 
 <div class="clearfix"></div>
 	
@@ -137,3 +138,5 @@ if($_SESSION['username'] != "Admin"){
          </div>
 	   </div>
 	 </div><!--End Row-->
+
+   <?php include "footer.php";?>

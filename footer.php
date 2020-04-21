@@ -1,7 +1,6 @@
 <!--start overlay-->
 <div class="overlay toggle-menu"></div>
 	<!--end overlay-->
-
     </div>
     <!-- End container-fluid-->
 
@@ -14,43 +13,22 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © 2019 cynojine
+          Copyright © 2020 Dashtreme Admin
         </div>
       </div>
     </footer>
 	<!--End footer-->
 	
-	<!--start color switcher-->
+   <!--start color switcher-->
    <div class="right-sidebar">
     <div class="switcher-icon">
       <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
     </div>
     <div class="right-sidebar-content">
-	
-	
-	 <p class="mb-0">Header Colors</p>
-      <hr>
-	  
-	  <div class="mb-3">
-	    <button type="button" id="default-header" class="btn btn-outline-primary">Default Header</button>
-	  </div>
-      
-      <ul class="switcher">
-        <li id="header1"></li>
-        <li id="header2"></li>
-        <li id="header3"></li>
-        <li id="header4"></li>
-        <li id="header5"></li>
-        <li id="header6"></li>
-      </ul>
 
-      <p class="mb-0">Sidebar Colors</p>
+      <p class="mb-0">Gaussion Texture</p>
       <hr>
-	  
-      <div class="mb-3">
-	    <button type="button" id="default-sidebar" class="btn btn-outline-primary">Default Sidebar</button>
-	  </div>
-	  
+      
       <ul class="switcher">
         <li id="theme1"></li>
         <li id="theme2"></li>
@@ -59,11 +37,26 @@
         <li id="theme5"></li>
         <li id="theme6"></li>
       </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
       
      </div>
    </div>
   <!--end color switcher-->
-   
+	
   </div><!--End wrapper-->
   
 
